@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
+<title>TERISOLIR!</title>
+<style>
+html { background-color: #C1DDFE; font-size: 20px; }
+
+:root { --hole-distance: 25px; }
+
+#hole1 { top: var(--hole-distance); left: var(--hole-distance);}
+#hole2 { top: var(--hole-distance); right: var(--hole-distance);}
+#hole3 { bottom: var(--hole-distance); left: var(--hole-distance);}
+#hole4 { bottom: var(--hole-distance); right: var(--hole-distance);}
+
+.hole {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at 99%, #f4f4f4 10%, grey 70%);
+  transform: rotate(45deg);
+}
+
+#sign-wrapper {
+  background-color: #f4f4f4;
+  position: relative;
+  width: 80%;
+  min-width: 340px;
+  max-width: 800px;
+  height: 90%;
+  margin: 2% auto;
+  padding: 50px;
+  border: 1px solid #e9ecf0;
+  border-radius: 45px;
+  box-shadow: 5px 5px 10px #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+#header {
+  background-color: #ef5350;
+  padding: 20px;
+  border-radius: 30px 30px 0 0;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #f4f4f4;
+  font-size: 4.5em;
+  line-height: .9em;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 900;
+}
+
+.strike {
+  position: absolute;
+  width: 10%;
+  height: 10px;
+  background-color: #fff;
+}
+
+img.icon {
+    width: 100%;
+    height: auto;
+}
+
+#strike1 { top: 115px; left: 80px; }
+#strike2 { top: 115px; right: 80px; }
+
+#sign-body {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#copy-container   { flex-basis: 53%; }
+#cop-container   { flex-basis: 2%; }
+#circle-container { flex-basis: 45%; }
+
+h2, p {
+  text-align: left;
+  color: #1d1e22;
+}
+
+h2 {
+  font-size: 1.0em;
+  text-transform: uppercase;
+  margin: 40px 0;
+  line-height: .9em;
+}
+p { 
+  font-size: 18px; 
+}
+
+@media screen and (max-width: 930px) {
+  #sign-wrapper { 
+    font-size: .75rem; }
+}
+@media screen and (max-width: 750px) {
+  #sign-wrapper { 
+    font-size: .6rem; }
+  h2 { 
+    margin: 25px 0; }
+  .strike { 
+    visibility: hidden; }
+}
+@media screen and (max-width: 600px) {
+  #sign-wrapper { 
+    font-size: .4rem; 
+    padding: 15px;
+    border-radius: 25px;
+  }
+  #header {
+    border-radius: 20px 20px 0 0;
+  }
+  #circle-container {
+    width: 50%;
+  }
+  .hole {
+    width: 10px;
+    height: 10px;
+  }
+  :root {
+    --hole-distance: 8px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sign-wrapper { 
+    font-size: .34rem; }
+  h2 { 
+    margin: 10px; }
+  p { 
+    font-size: 10px; }
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="sign-wrapper">
+  <div id="hole1" class="hole"></div>
+  <div id="hole2" class="hole"></div>
+  <div id="hole3" class="hole"></div>
+  <div id="hole4" class="hole"></div>
+
+  <header id="header">
+    <h1>LAYANAN PEMBAYARAN</h1>
+    <div id="strike1" class="strike"></div>
+    <div id="strike2" class="strike"></div>
+  </header>
+
+  <section id="sign-body">
+    <div id="copy-container">
+	  <p><strong>PELANGGAN MIMEDIA YANG TERHORMAT</strong></p>
+      <p>Kami Informasikan bahwa metode pembayaran <b>INTERNET</b> anda melalui qris dan tranfer ke rekening pembayaran yang tertera ada halaman ini</p>
+     <p> Pembayaran Via QRIS (Tanpa tambahan biaya transfer) dapat klik logo QRIS dibawah ini:</p>
+     <a href="index.png"target="_blank" rel="noopener noreferrer"> <img class="icon" src="logo-qris.png" alt="logo" width="50%"></a>
+   
+    </div>
+    <div id="cop-container"></div>
+    <div id="circle-container">
+		<br>
+    <img class="icon" src="isolir1.png" alt="qris" width="400" height="300">
+    </div>
+  </section>
+ <p size="15px">Untuk konfirmasi pembayaran Hubungi: <a href="https://wa.me/+6283812126316"target="_blank" rel="noopener noreferrer">+62838-1212-6316</a></p>
+</div>
+
+</body>
+</html>
